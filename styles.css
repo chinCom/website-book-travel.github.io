@@ -1,0 +1,267 @@
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0092ca;
+    color: white;
+    padding: 20px;
+}
+
+.top_nav .img {
+    width: 300px;
+    height: 100px;
+}
+
+.top_nav img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top_nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top_nav nav li {
+    padding: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.top_nav nav li.selected {
+    color: yellow;
+}
+
+.top_nav nav li:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .top_nav {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .top_nav .img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .top_nav nav {
+        margin-top: 10px;
+    }
+
+    .top_nav nav ul {
+        flex-direction: column;
+    }
+
+    .top_nav nav li {
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+
+.container1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    /* padding: 100px; */
+    row-gap: 2px;
+}
+
+.body {
+
+    background-color: #0092ca;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-row: 1fr 30fr; */
+    grid-template-rows: 0.5fr 3fr;
+}
+
+.body>div {}
+
+.body .border_container .information_tours {
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 10px;
+}
+
+.body .border_container .information_tours .item_first {
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.5fr 2fr 1fr;
+}
+
+
+.item_first .icon_weather {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.item_first .icon_weather>div {
+    margin: auto;
+}
+
+.item_first .icon_cloud {}
+
+
+.body .border_container .information_tours .item_three {
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 0.5fr 2fr 1fr;
+    margin-left: 10px;
+    border-left: 3px solid #0092ca;
+
+}
+
+
+.item_three .icon_weather {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.item_three .icon_weather>div {
+    margin: auto;
+}
+
+.item_three .icon_cloud {}
+
+
+.body .border_container .information_tours .item_second {
+    display: grid;
+    grid-template-rows: 0.38fr 0.5fr 1fr 0.5fr 0.5fr;
+    margin-right: 10px;
+    border-right: 3px solid #0092ca;
+}
+
+.item_second>.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item_second>.content {}
+
+.item_second .content p {
+    word-spacing: 10px;
+    line-height: 30px;
+}
+
+.date>div {
+    background-color: #ff895d;
+}
+
+.date p {
+    color: red;
+    font-weight: bolder;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    background-color: red;
+    /* border-width: 10px; */
+    border: 3px solid red;
+}
+
+.view_more>.center_view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0092ca;
+
+}
+
+.item_second>.more_infor>div {}
+
+.item_second .more_infor {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+
+
+.item_second .more_infor div {
+    /* color: white;
+     */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #ff895d;
+     margin: 10px;
+     margin-top: -40px;
+     height: 70px;
+}
+
+.ul li {
+    list-style-image: url('Untitled.png');
+    margin-bottom: 20px;
+    color: #0092ca;
+}
+
+
+
+.title .introduction h2 {
+    font-weight: 700;
+}
+
+
+
+.body .border_container .information_tours .item_four {
+    display: grid;
+    grid-template-rows: 0.38fr 0.5fr 1fr 0.5fr 0.5fr;
+
+}
+
+.item_four>.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item_four>.content {}
+
+.item_four .content p {
+    word-spacing: 10px;
+    line-height: 30px;
+}
+
+
+.item_four>.more_infor>div {}
+
+.item_four .more_infor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.item_four .more_infor div {
+    /* color: white;
+     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff895d;
+    margin: 10px;
+    margin-top: -40px;
+    height: 70px;
+}
